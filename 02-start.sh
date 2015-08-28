@@ -1,6 +1,9 @@
 #!/bin/bash
 
 
+echo "Starting Jira. Searching for server-shared.xml"
+
+ls -la /opt/atlassian/jira-home
 
 if [ -f /opt/atlassian/jira-home/server-shared.xml ]; then
   cp /opt/atlassian/jira-home/server-shared.xml /opt/atlassian/jira/conf/server.xml
